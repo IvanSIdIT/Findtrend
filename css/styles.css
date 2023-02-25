@@ -4,6 +4,24 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Effra";
+  src: local("Effra Regular"), local("Effra-Regular"), url("../fonts/Effra.woff2") format("woff2"), url("../fonts/Effra.woff") format("woff"), url("../fonts/Effra.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Effra";
+  src: local("Effra Heavy"), local("Effra-Heavy"), url("../fonts/Effra-Heavy.woff2") format("woff2"), url("../fonts/Effra-Heavy.woff") format("woff"), url("../fonts/Effra-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Effra";
+  src: local("Effra Bold"), local("Effra-Bold"), url("../fonts/Effra-Bold.woff2") format("woff2"), url("../fonts/Effra-Bold.woff") format("woff"), url("../fonts/Effra-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 .partners__list {
   list-style: none;
   display: grid;
@@ -13,7 +31,21 @@
   margin-bottom: 50px;
   font-family: "Effra";
 }
-.partners__item {
+.partners__item-2 {
   font-size: 50px;
   margin-bottom: 50px;
+  font-family: "Effra";
+  font-weight: 500;
+}
+.partners__item-3 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: "Effra";
+  font-weight: 700;
+}
+.partners__item-4 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: "Effra";
+  font-weight: 900;
 }/*# sourceMappingURL=styles.css.map */
