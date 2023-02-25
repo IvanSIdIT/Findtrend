@@ -1,0 +1,10 @@
+@mixin fontMax($fontw, $fs, $heigth1, $heigth2) {
+  font-weight: $fontw;
+  font-size: $fs;
+  line-height: calc($heigth1 / $heigth2);
+}
+
+@mixin fontMin($fs, $heigth1, $heigth2) {
+  font-size: $fs;
+  line-height: calc($heigth1 / $heigth2);
+}
