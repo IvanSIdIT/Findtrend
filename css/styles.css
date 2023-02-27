@@ -37,13 +37,15 @@ body {
   margin-bottom: 80px;
 }
 .partners__list {
+  width: 1156px;
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 265px);
   grid-template-rows: repeat(4, 120px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
 }
 .partners__item {
