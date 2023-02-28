@@ -8,16 +8,14 @@
   &__list {
     width: 1156px;
     margin: 0 auto;
-    justify-content: center;
     list-style: none;
     display: grid;
-    grid-template-rows: repeat(4, 120px);
-
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
   }
 
   &__item {
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: center;
