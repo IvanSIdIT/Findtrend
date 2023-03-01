@@ -1,0 +1,19 @@
+.subscription {
+  padding: 140px;
+  background-color: black;
+  &__title {
+    color: #ffffff;
+    @include fontMax(700, 64px, 76em, 64em);
+    text-align: center;
+    margin-bottom: 80px;
+    @media screen and (max-width: 1440px) {
+      @include fontMax(900, 50px, 64em, 50em);
+    }
+    @media screen and (max-width: 1080px) {
+      @include fontMax(900, 36px, 43em, 36em);
+    }
+  }
+}
+
+.toggle {
+}
