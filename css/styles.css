@@ -208,7 +208,7 @@ body {
   font-size: 18px;
   line-height: 100%;
   padding: 0 0 0 27px;
-  background: url(./images/list-mark.png) left 5px no-repeat;
+  background: url(../images/list-mark.png) left 5px no-repeat;
 }
 .includes__item:not(:last-child) {
   margin-bottom: 24px;
