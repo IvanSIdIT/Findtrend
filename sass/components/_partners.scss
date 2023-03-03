@@ -1,7 +1,7 @@
 .partners {
   padding: 140px;
-  max-width: 1156px;
   margin: 0 auto;
+  max-width: 1354px;
 
   @media screen and (max-width: 1440px) {
     padding: 90px;
@@ -10,17 +10,6 @@
     padding: 20px;
   }
 
-  &__title {
-    @include fontMax(700, 64px, 76em, 64em);
-    text-align: center;
-    margin-bottom: 80px;
-    @media screen and (max-width: 1440px) {
-      @include fontMax(900, 50px, 64em, 50em);
-    }
-    @media screen and (max-width: 1080px) {
-      @include fontMax(900, 36px, 43em, 36em);
-    }
-  }
   &__list {
     margin: 0 auto;
     list-style: none;

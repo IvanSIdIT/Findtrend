@@ -1,11 +1,23 @@
 body {
   font-family: 'Effra', sans-serif;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 .btn-reset {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  box-sizing: border-box;
+}
+
+.primary-title {
+  @include fontMax(700, 64px, 76em, 64em);
+  text-align: center;
+  margin-bottom: 80px;
+  @media screen and (max-width: 1440px) {
+    @include fontMax(900, 50px, 64em, 50em);
+  }
+  @media screen and (max-width: 1080px) {
+    @include fontMax(900, 36px, 43em, 36em);
+  }
 }

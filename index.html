@@ -20,7 +20,7 @@
     <header class="header"></header>
     <main class="main">
       <section class="partners">
-        <h2 class="partners__title">Findtrend make +1000 Startup grow</h2>
+        <h2 class="partners__title primary-title">Findtrend make +1000 Startup grow</h2>
         <ul class="partners__list">
           <li class="partners__item partners__item-1">
             <img class="partners__img" src="./images/partners/01.png" alt="Microsoft" />
@@ -75,73 +75,75 @@
         </ul>
       </section>
       <section class="subscription">
-        <h2 class="subscription__title">Get your best deal</h2>
-        <div class="subscription__toggle toggle">
+        <h2 class="subscription__title primary-title">Get your best deal</h2>
+        <div class="subscription__toggle toggle" id="test">
           <span class="toggle__left">Monthly</span>
-          <input type="checkbox" />
+          <input type="checkbox" id="check" onclick="isChecked()" />
           <span class="toggle__right">Yearly</span>
         </div>
         <ul class="subscription__types">
           <li class="subscription__type type">
             <div class="type__top">
-              <h3 class="type__title"></h3>
-              <p class="type__sybtitle"></p>
+              <h3 class="type__title">Personal</h3>
+              <p class="type__subtitle">Special first packet for all</p>
             </div>
             <div class="type__content">
               <p class="type__value">
-                <span class="type__price" itemprop="price"></span>
-                <span class="type__duration"></span>
+                <span class="type__price price">$<span itemprop="price" id="price0">8</span></span>
+                <span class="type__duration" id="dur0">/month</span>
               </p>
               <ul class="type__includes includes">
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
+                <li class="includes__item">Up to 5 page each group</li>
+                <li class="includes__item">Up to 10 group page</li>
+                <li class="includes__item">5 Days group page saved</li>
               </ul>
-              <button class="type__button btn-reset">Start Free Trial</button>
             </div>
+            <button class="type__button btn-reset">Start Free Trial</button>
           </li>
           <li class="subscription__type type">
             <div class="type__top">
-              <h3 class="type__title"></h3>
-              <p class="type__sybtitle"></p>
+              <h3 class="type__title">Regular</h3>
+              <p class="type__subtitle">Recommended for personal pro</p>
             </div>
             <div class="type__content">
               <p class="type__value">
-                <span class="type__price" itemprop="price"></span>
-                <span class="type__duration"></span>
+                <span class="type__price price">$<span itemprop="price" id="price1">20</span></span>
+                <span class="type__duration" id="dur1">/month</span>
               </p>
               <ul class="type__includes includes">
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
+                <li class="includes__item">Up to 15 page each group</li>
+                <li class="includes__item">Download page up to 20 page</li>
+                <li class="includes__item">Up to 10 group page</li>
+                <li class="includes__item">15 Days group page saved</li>
               </ul>
-              <button class="type__button btn-reset">Start Free Trial</button>
             </div>
+            <button class="type__button btn-reset">Start Free Trial</button>
           </li>
           <li class="subscription__type type">
             <div class="type__top">
-              <h3 class="type__title"></h3>
-              <p class="type__sybtitle"></p>
+              <h3 class="type__title">Premium</h3>
+              <p class="type__subtitle">Packet for Startup & Company</p>
             </div>
             <div class="type__content">
               <p class="type__value">
-                <span class="type__price" itemprop="price"></span>
-                <span class="type__duration"></span>
+                <span class="type__price price">$<span itemprop="price" id="price2">48</span></span>
+                <span class="type__duration" id="dur2">/month</span>
               </p>
               <ul class="type__includes includes">
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
-                <li class="includes__item"></li>
+                <li class="includes__item">Unlimited group pages</li>
+                <li class="includes__item">Unlimited download page</li>
+                <li class="includes__item">Unlimited page each group</li>
+                <li class="includes__item">Customize sorting group pages</li>
+                <li class="includes__item">Customize group page name</li>
+                <li class="includes__item">30 Days group page saved</li>
               </ul>
-              <button class="type__button btn-reset">Start Free Trial</button>
             </div>
+            <button class="type__button btn-reset">Start Free Trial</button>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer"></footer>
+    <script src="./JS/script.js"></script>
   </body>
 </html>
