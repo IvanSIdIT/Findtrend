@@ -136,8 +136,9 @@ body {
 }
 @media screen and (max-width: 825px) {
   .subscription__types {
-    grid-template-rows: 640px 640px;
-    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(2, 602px);
+    grid-template-columns: minmax(1px, 339px);
+    gap: 24px;
   }
 }
 
@@ -158,6 +159,11 @@ body {
   line-height: 100%;
   margin-bottom: 8px;
 }
+@media screen and (max-width: 825px) {
+  .type__title {
+    font-size: 32px;
+  }
+}
 .type__subtitle {
   margin-bottom: 32px;
   font-size: 18px;
@@ -167,6 +173,11 @@ body {
   font-size: 64px;
   line-height: 100%;
   font-weight: 700;
+}
+@media screen and (max-width: 825px) {
+  .type__price {
+    font-size: 60px;
+  }
 }
 .type__duration {
   font-size: 18px;
@@ -229,18 +240,29 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+@media screen and (max-width: 825px) {
+  .toggle input {
+    height: 44px;
+  }
+}
 .toggle input::before {
   content: "";
   position: absolute;
   width: 36px;
   height: 36px;
   left: 8px;
-  top: 7px;
+  top: 8px;
   background: #a8ff35;
   border-radius: 99px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+@media screen and (max-width: 825px) {
+  .toggle input::before {
+    width: 28px;
+    height: 28px;
+  }
 }
 .toggle input:checked::before {
   left: 61px;
@@ -249,6 +271,13 @@ body {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2083333333;
+}
+@media screen and (max-width: 825px) {
+  .toggle span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 .toggle__left {
   -webkit-transition: 0.5s;
