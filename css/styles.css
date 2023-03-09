@@ -117,6 +117,33 @@ body {
   margin: 0px 0px 80px 0px;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav__btn {
+  padding: 5px 20px;
+}
+.nav__btn.active {
+  background-color: aquamarine;
+}
+
+.tabs__content-item {
+  display: none;
+}
+.tabs__content-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.tabs__content-item.active {
+  display: block;
+}
+
 .subscription {
   padding: 140px 30px;
   background-color: black;

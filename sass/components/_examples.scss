@@ -4,3 +4,29 @@
     margin: 0px 0px 80px 0px;
   }
 }
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  justify-content: center;
+  &__btn {
+    padding: 5px 20px;
+
+    &.active {
+      background-color: aquamarine;
+    }
+  }
+}
+
+.tabs {
+  &__content-item {
+    display: none;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    &.active {
+      display: block;
+    }
+  }
+}
