@@ -193,11 +193,20 @@ body {
   background: #000000;
   color: #ffffff;
 }
+.type:nth-child(2) button:hover, .type:nth-child(2) button:active {
+  background: #2b2b2b;
+}
 .type__button {
   background: #a8ff35;
   border-radius: 29px;
   width: 100%;
   padding: 16px 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.type__button:hover, .type__button:active {
+  background-color: #8cc83a;
 }
 
 .includes {

@@ -43,5 +43,8 @@
   &__link {
     color: black;
     text-decoration: none;
+    &:hover,
+    &:active {
+    }
   }
 }
