@@ -112,6 +112,7 @@ body {
 
 .examples {
   padding: 140px;
+  background-color: #fafafa;
 }
 .examples__title {
   margin: 0px 0px 80px 0px;
@@ -129,6 +130,8 @@ body {
 }
 .nav__btn {
   padding: 5px 20px;
+  background: #ffffff;
+  border-radius: 8px;
 }
 .nav__btn.active {
   background-color: aquamarine;

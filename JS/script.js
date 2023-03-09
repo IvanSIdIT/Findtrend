@@ -71,3 +71,5 @@ tabsBtn.forEach(function (item) {
     }
   });
 });
+
+document.querySelectorAll('.nav__btn')[0].click();
