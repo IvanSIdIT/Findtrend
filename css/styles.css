@@ -138,6 +138,16 @@ body {
 .examples__btn:hover, .examples__btn:active {
   background: #2b2b2b;
 }
+@media screen and (max-width: 1200px) {
+  .examples {
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .examples {
+    padding: 50px 18px;
+  }
+}
 
 .nav {
   margin: 0px 0px 75px 0px;
@@ -151,6 +161,9 @@ body {
           justify-content: center;
 }
 .nav__btn {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   padding: 32px;
   background: #ffffff;
   border-radius: 8px;
@@ -158,11 +171,43 @@ body {
 .nav__btn.active {
   background-color: #a8ff35;
 }
+.nav__btn:hover, .nav__btn:active {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
 @media screen and (max-width: 1200px) {
   .nav__btn {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .nav__img {
     width: 30px;
     height: 30px;
-    padding: 16px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .nav__item {
+    display: block;
+    width: 62px;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .nav {
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 734px) {
+  .nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
