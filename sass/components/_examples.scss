@@ -81,38 +81,20 @@
 
 .tabs {
   margin: 0px 0px 95px 0px;
+  &__img {
+    text-align: center;
+    @media screen and (max-width: 930px) {
+      max-width: 930px;
+    }
+  }
   &__content-item {
     display: none;
-
+    @media screen and (max-width: 930px) {
+      max-width: 930px;
+    }
     &.active {
-      display: block;
+      display: flex;
+      justify-content: center;
     }
   }
 }
-
-// .nav {
-//   display: flex;
-//   overflow-x: auto;
-//   overflow-y: hidden;
-//   gap: 24px;
-//   &__btn {
-//     padding: 32px;
-//     background: #ffffff;
-//     border-radius: 8px;
-//     &.active {
-//       background-color: #a8ff35;
-//     }
-//     @media screen and (max-width: 1200px) {
-//       padding: 16px;
-//     }
-//   }
-//   &__img {
-//     @media screen and (max-width: 930px) {
-//       width: 30px;
-//       height: 30px;
-//     }
-//   }
-//   @media screen and (max-width: 930px) {
-//     gap: 16px;
-//   }
-// }
