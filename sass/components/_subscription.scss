@@ -80,7 +80,7 @@
     color: #ffffff;
 
     &:hover,
-    &:active {
+    &:focus {
       background: #2b2b2b;
     }
   }
@@ -92,7 +92,7 @@
     padding: 16px 0;
     transition: 0.2s;
     &:hover,
-    &:active {
+    &:focus {
       background-color: #8cc83a;
     }
   }

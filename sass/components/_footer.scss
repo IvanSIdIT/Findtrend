@@ -43,8 +43,21 @@
   &__link {
     color: black;
     text-decoration: none;
-    &:hover,
-    &:active {
+    position: relative;
+    &::after {
+      transition: 0.3s;
+      border-radius: 1px;
+      left: 0;
+      top: 23px;
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: black;
+    }
+    &:hover:after,
+    &:focus:after {
+      width: 100%;
     }
   }
 }

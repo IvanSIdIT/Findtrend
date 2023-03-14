@@ -16,7 +16,7 @@
     padding: 16px 32px;
     align-self: center;
     &:hover,
-    &:active {
+    &:focus {
       background: #2b2b2b;
     }
   }
@@ -43,7 +43,7 @@
       background-color: #a8ff35;
     }
     &:hover,
-    &:active {
+    &:focus {
       transform: translateY(-5px);
     }
     @media screen and (max-width: 1200px) {
