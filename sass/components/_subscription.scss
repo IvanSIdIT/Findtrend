@@ -118,11 +118,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   gap: 24px;
   color: #fff;
   margin-bottom: 40px;
   text-align: center;
+
   & input {
     position: relative;
     -webkit-appearance: none;
@@ -165,8 +165,15 @@
   }
 
   &__right {
-    opacity: 0.5;
-    transition: 0.5s;
+    position: relative;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+
+    &::after {
+      content: url(/images/arrow.svg);
+      position: absolute;
+      top: 0;
+      opacity: 1;
+    }
   }
 }
 
@@ -175,5 +182,5 @@
 }
 
 .toggle.active > .toggle__right {
-  opacity: 1;
+  color: rgba($color: #ffffff, $alpha: 1);
 }

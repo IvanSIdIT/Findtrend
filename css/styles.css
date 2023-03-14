@@ -423,10 +423,14 @@ body {
   transition: 0.5s;
 }
 .toggle__right {
-  opacity: 0.5;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+}
+.toggle__right::after {
+  content: url(/images/arrow.svg);
+  position: absolute;
+  top: 0;
+  opacity: 1;
 }
 
 .toggle.active > .toggle__left {
@@ -434,7 +438,7 @@ body {
 }
 
 .toggle.active > .toggle__right {
-  opacity: 1;
+  color: white;
 }
 
 .footer {
