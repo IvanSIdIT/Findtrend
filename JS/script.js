@@ -1,3 +1,6 @@
+'use strict'; //строгий режим
+
+// функция для изменения цены первого тарифа
 function isChecked0() {
   if (document.getElementById('check').checked) {
     document.getElementById('price0').textContent = `${
@@ -11,6 +14,7 @@ function isChecked0() {
     document.getElementById('dur0').textContent = '/monthly';
   }
 }
+// функция для изменения цены второго тарифа
 
 function isChecked1() {
   if (document.getElementById('check').checked) {
@@ -25,6 +29,7 @@ function isChecked1() {
     document.getElementById('dur1').textContent = '/monthly';
   }
 }
+// функция для изменения цены третьего тарифа
 
 function isChecked2() {
   if (document.getElementById('check').checked) {
@@ -40,6 +45,7 @@ function isChecked2() {
   }
 }
 
+// функция для группирования всех функций выше
 function isChecked() {
   isChecked0();
   isChecked1();
@@ -47,7 +53,9 @@ function isChecked() {
   document.getElementById('test').classList.toggle('active');
 }
 
-const tabsBtn = document.querySelectorAll('.nav__btn');
+//Скрипт для табов
+
+const tabsBtn = document.querySelectorAll('.nav__btn'); //Переменная с коллекцией кнопок
 
 const tabsItems = document.querySelectorAll('.tabs__content-item');
 
@@ -72,4 +80,4 @@ tabsBtn.forEach(function (item) {
   });
 });
 
-document.querySelectorAll('.nav__btn')[0].click();
+document.querySelectorAll('.nav__btn')[0].click(); // строчка для назначения с какой вкладки начинать
