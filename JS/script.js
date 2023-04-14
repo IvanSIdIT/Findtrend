@@ -1,55 +1,25 @@
 'use strict'; //строгий режим
 
-// функция для изменения цены первого тарифа
-function isChecked0() {
-  if (document.getElementById('check').checked) {
-    document.getElementById('price0').textContent = `${
-      +document.getElementById('price0').innerHTML * 11
-    } `;
-    document.getElementById('dur0').textContent = '/yearly';
-  } else {
-    document.getElementById('price0').textContent = `${
-      document.getElementById('price0').innerHTML / 11
-    }`;
-    document.getElementById('dur0').textContent = '/monthly';
-  }
-}
-// функция для изменения цены второго тарифа
-
-function isChecked1() {
-  if (document.getElementById('check').checked) {
-    document.getElementById('price1').textContent = `${
-      +document.getElementById('price1').innerHTML * 11
-    } `;
-    document.getElementById('dur1').textContent = '/yearly';
-  } else {
-    document.getElementById('price1').textContent = `${
-      document.getElementById('price1').innerHTML / 11
-    }`;
-    document.getElementById('dur1').textContent = '/monthly';
-  }
-}
-// функция для изменения цены третьего тарифа
-
-function isChecked2() {
-  if (document.getElementById('check').checked) {
-    document.getElementById('price2').textContent = `${
-      +document.getElementById('price2').innerHTML * 11
-    } `;
-    document.getElementById('dur2').textContent = '/yearly';
-  } else {
-    document.getElementById('price2').textContent = `${
-      document.getElementById('price2').innerHTML / 11
-    }`;
-    document.getElementById('dur2').textContent = '/monthly';
-  }
-}
-
-// функция для группирования всех функций выше
 function isChecked() {
-  isChecked0();
-  isChecked1();
-  isChecked2();
+  const prices = document.querySelectorAll('.testo');
+  const durations = document.querySelectorAll('.type__duration');
+
+  durations.forEach(el => {
+    if (document.getElementById('check').checked) {
+      el.textContent = '/yearly';
+    } else {
+      el.textContent = '/monthly';
+    }
+  });
+
+  prices.forEach(el => {
+    if (document.getElementById('check').checked) {
+      el.textContent = `${+el.innerHTML * 11} `;
+    } else {
+      el.textContent = `${el.innerHTML / 11}`;
+    }
+  });
+
   document.getElementById('test').classList.toggle('active');
 }
 
