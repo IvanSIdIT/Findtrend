@@ -1,4 +1,4 @@
-'use strict'; //строгий режим
+'use strict'; //строгий режим.
 
 function isChecked() {
   const prices = document.querySelectorAll('.testo');
