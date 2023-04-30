@@ -1,4 +1,4 @@
-'use strict'; //строгий режим.
+'use strict'; //строгий режим
 
 function isChecked() {
   const prices = document.querySelectorAll('.testo');
@@ -21,6 +21,34 @@ function isChecked() {
   });
 
   document.getElementById('test').classList.toggle('active');
+}
+function expandedForm(n) {
+  let res = '';
+  n = n.toString();
+  for (let i = 0; i < n.length; i++) {
+    if (i === 0) {
+      let j = 1;
+
+      res += `${n[i]}`;
+
+      while (j < n.length) {
+        res += '0';
+        j++;
+      }
+    }
+
+    if (n[i] != 0 && i !== 0) {
+      res += ` + ${n[i]}`;
+      let j = 1;
+
+      while (j < n.slice(i).length) {
+        res += '0';
+        j++;
+      }
+    }
+  }
+
+  return res;
 }
 
 //Скрипт для табов
